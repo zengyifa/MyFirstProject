@@ -1,0 +1,85 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "78c180c5-9cdc-4abc-a84f-68ca06e3c212": {
+        "id": "78c180c5-9cdc-4abc-a84f-68ca06e3c212",
+        "parent": null,
+        "name": "MyFirstProject",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "0424cb58-e94c-46cf-b206-4ff610076a98"
+        ],
+        "isRemovable": false,
+        "filePath": "MyFirstProject"
+      },
+      "0424cb58-e94c-46cf-b206-4ff610076a98": {
+        "id": "0424cb58-e94c-46cf-b206-4ff610076a98",
+        "parent": "78c180c5-9cdc-4abc-a84f-68ca06e3c212",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "MyFirstProject/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [],
+        "testCases": {
+          "bf444537-54ff-4c8a-bcc3-0e29e385d5b2": {
+            "id": "bf444537-54ff-4c8a-bcc3-0e29e385d5b2",
+            "functionId": "0424cb58-e94c-46cf-b206-4ff610076a98",
+            "name": "My First Test Case",
+            "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
+          }
+        }
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "78c180c5-9cdc-4abc-a84f-68ca06e3c212",
+    "openFiles": [
+      "0424cb58-e94c-46cf-b206-4ff610076a98"
+    ],
+    "currentFileId": "0424cb58-e94c-46cf-b206-4ff610076a98",
+    "resources": {},
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "MyFirstProject",
+    "projectDescription": "My First Project",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1566240900254
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "MyFirstProject",
+      "url": "https://github.com/zengyifa/MyFirstProject"
+    }
+  }
+}
